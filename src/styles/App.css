@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .app {
+    padding: 1rem;
+  }
+  
+  .search-bar {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .movie-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .movie-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .movie-card, .WatchList-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .movie-card img, .WatchList-item img {
+    width: 80px;
+  }
+  
+  .movie-card button {
+    margin-top: 0.5rem;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .WatchList {
+    margin-top: 2rem;
+  }
+  
